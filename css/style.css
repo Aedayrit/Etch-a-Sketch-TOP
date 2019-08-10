@@ -4,32 +4,63 @@
 }
 
 body{
-    height: 100vh;
-    box-sizing: border-box;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aqua;
 }
 
 header{
-    height: 20%;
+    height: 20vh;
     background-color: azure;
 }
 
 header h1{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    letter-spacing: 1em;
+    letter-spacing: .8em;
     text-align: center;
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
+
+/* main content */
 
 main{
-    height: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1em;
 }
 
-.container{
-    border: 2px solid #ccc;
-    margin: 2em;
+/* aside content */
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    background-color: #333;
+    margin-left: 2em;
 }
+
+.aside > button{
+    height: 25vh;
+    width: 80%;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/* container content */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #333;
+    margin: 1em;
+}
+
+.gap{
+    background-color: white;
+    border: .01px solid #333;
+}
+
 
