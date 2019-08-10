@@ -19,7 +19,7 @@ function makeBox(b){
         a[i].style.border = (b >= 75) ? "none" : '';
         container.appendChild(a[i]);
     }
-    a.forEach((a) => a.addEventListener('mouseover', () => a.style.background = 'black'));
+    a.forEach((a) => a.addEventListener('mouseover touchmove', () => a.style.background = 'black'));
 }
 
 function removeBox(){
